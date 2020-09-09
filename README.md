@@ -48,10 +48,62 @@ Since all reviews on Metacritic have the same elements, we can just append the d
 
 ## Model
 
-
+![Image of html](/pic/model.png)
 
 ## Result
+Visualizations (2D UMAP) of clustering results with different vectorization methods with n_topic=10:
 
 
+**TF-IDF:**
 
+<img src="/pic/2D_vis_TFIDF.png" alt="alt text" width="500" height="500">
 
+**BERT:**
+
+<img src="/pic/2D_vis_BERT.png" alt="alt text" width="500" height="500">
+
+**LDA-BERT:**
+
+<img src="/pic/2D_vis_LDABERT.png" alt="alt text" width="450" height="450">
+
+**Word Clouds:**
+
+**Topic 1: Negative critics**
+
+<img src="/pic/t0.png" alt="alt text" width="450" height="450">
+
+**Topic 2: Positive compliments**
+
+<img src="/pic/t1.png" alt="alt text" width="450" height="450">
+
+**Topic 3: Cheating behaviors**
+
+<img src="/pic/t2.png" alt="alt text" width="450" height="450">
+
+**Topic 4: Good graphics**
+
+<img src="/pic/t3.png" alt="alt text" width="450" height="450">
+
+**Topic 5: Bugs**
+
+<img src="/pic/t4.png" alt="alt text" width="450" height="450">
+
+**Topic 6: Play with Friends**
+
+<img src="/pic/t5.png" alt="alt text" width="450" height="450">
+
+**Topic 7: Game mods**
+
+<img src="/pic/t6.png" alt="alt text" width="450" height="450">
+
+**Topic 8: Spend lots of time**
+
+<img src="/pic/t7.png" alt="alt text" width="450" height="450">
+
+**Topic 9: Spend time with friends**
+
+<img src="/pic/t8.png" alt="alt text" width="450" height="450">
+
+**Topic 10: I believe to be soccer and the game : Rocket League**
+
+<img src="/pic/t9.png" alt="alt text" width="450" height="450">
