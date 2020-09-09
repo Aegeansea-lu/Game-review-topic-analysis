@@ -47,6 +47,7 @@ Since all reviews on Metacritic have the same elements, we can just append the d
 
 
 ## Model
+Typically, there are two ways to complete the topic identification task. We can either resort to hierarchical Bayesian models, like latent Dirichlet allocation (LDA), or we can embed our target documents into some vector space and identify their similarity structure in the vector space by clustering methods. LDA has a hard time handling short texts when there is not much text to model, so the performance would be far from satisfaction. Let's combine both methods and see what we can get
 
 ![Image of html](/pic/model.png)
 
