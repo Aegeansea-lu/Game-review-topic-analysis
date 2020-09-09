@@ -23,3 +23,5 @@ User reviews play a vital role in product's future improvement and user performa
 
 ## Web Scraping using Beautiful Soup 
 Use Metacritic as example
+![Image of html](https://github.com/Aegeansea-lu/Game-review-topic-analysis/tree/master/pic/html.png)
+Carefully locate every tag and save the data we want
