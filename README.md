@@ -23,5 +23,27 @@ User reviews play a vital role in product's future improvement and user performa
 
 ## Web Scraping using Beautiful Soup 
 Use Metacritic as example
-![Image of html](https://github.com/Aegeansea-lu/Game-review-topic-analysis/tree/master/pic/html.png)
-Carefully locate every tag and save the data we want
+
+![Image of html](/pic/html.png)
+
+Html tags are used to mark page elements, and similar elements are usually contained within the same tags. Carefully locate every tag and save the data we want
+
+```python3
+#look for review_content tags since every user review has this tag
+for review in soup.find_all('div', class_='review_content'): 
+#within review_content tag, look for the presence of longer reviews
+    if review.find('span', class_='blurb blurb_expanded'): 
+        review_dict['review'].append(review.find('span', class_=’blurb blurb_expanded').text)
+ 
+    else: 
+        review_dict[‘review’].append(review.find('div',class_='review_body').find('span').text)
+```
+
+We use find all to get all review_content tags within the page. This is the same as finding all reviews on the page because each review is enclosed by this div class.
+The if-else statement ensures that the text is pulled from the right tag, depending on whether the review is long or not.
+Let’s look at the ‘else ’condition first. For each review_content tag, we look for a div class that is close to the span tag containing the text review. In this case, I’ve used review_body div class. Since there is only one span tag within this class, we can use find to look for the first span tag.
+On to the ‘if’ condition. Longer reviews (that require users to click on ‘Expand’ to see the full text) are within a blurb blurb_expanded span class. Shorter reviews do not have this class. Since blurb blurb_expanded only appears for longer reviews, we can find it directly.
+Since all reviews on Metacritic have the same elements, we can just append the desired info to lists, and they will be in-order.
+
+
+## Model
