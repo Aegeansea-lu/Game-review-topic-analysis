@@ -47,3 +47,11 @@ Since all reviews on Metacritic have the same elements, we can just append the d
 
 
 ## Model
+
+
+
+## Result
+
+
+
+
